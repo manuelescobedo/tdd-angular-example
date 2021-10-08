@@ -1,0 +1,20 @@
+<h3>To-dos</h3>
+<app-todo-form (updatedItem)="savedItem($event)"></app-todo-form>
+<div class="card">
+  <app-todos-list [list]="todos">
+    <ng-template let-item="item" appTodoItem>
+      <div class="custom-control custom-checkbox todo-item custom-control-inline">
+        <input class="custom-control-input" type="checkbox" [value]="item.completed" [checked]="item.completed"
+          (change)="checkItem(item)" [(ngModel)]="item.completed" [ngModelOptions]="{standalone: true}"
+          id="item-{{ item.id }}">
+        <label [class.completed]="item.completed" class="custom-control-label" for="item-{{ item.id }}">
+          {{ item.title }}
+        </label>
+      </div>
+
+      <button class="btn btn-link float-right" type="button" (click)="deleteItem(item)" id="delete-item"><i
+          class="bi bi-trash text-danger"></i></button>
+
+    </ng-template>
+  </app-todos-list>
+</div>

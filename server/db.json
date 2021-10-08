@@ -1,0 +1,74 @@
+{
+  "todos": [
+    {
+      "completed": false,
+      "createdAt": 1627493144097,
+      "title": "First to do",
+      "id": 1,
+      "lastUpdate": 1627494761380
+    },
+    {
+      "completed": false,
+      "createdAt": 1627493195587,
+      "title": "Second to-do",
+      "id": 2,
+      "lastUpdate": 1627494762451
+    },
+    {
+      "completed": false,
+      "createdAt": 1627493251813,
+      "title": "Third to-do",
+      "id": 3,
+      "lastUpdate": 1627494762922
+    },
+    {
+      "completed": false,
+      "createdAt": 1627493296179,
+      "title": "Fourth to-do",
+      "id": 4,
+      "lastUpdate": 1627494763473
+    },
+    {
+      "completed": false,
+      "createdAt": 1627493386489,
+      "title": "Fifth to-do",
+      "id": 5,
+      "lastUpdate": 1627494764016
+    },
+    {
+      "completed": false,
+      "createdAt": 1627493565601,
+      "title": "Sixth to-do",
+      "id": 6,
+      "lastUpdate": 1627494764482
+    },
+    {
+      "completed": false,
+      "createdAt": 1627493585813,
+      "title": "Seventh to-do",
+      "id": 7,
+      "lastUpdate": 1627494764972
+    },
+    {
+      "completed": false,
+      "createdAt": 1627493596967,
+      "title": "Eight to-do",
+      "id": 8,
+      "lastUpdate": 1627494765472
+    },
+    {
+      "completed": false,
+      "createdAt": 1627493604482,
+      "title": "Ninth to-do",
+      "id": 9,
+      "lastUpdate": 1627494765930
+    },
+    {
+      "completed": false,
+      "createdAt": 1627493611739,
+      "title": "Tenth to-do",
+      "id": 10,
+      "lastUpdate": 1633713124001
+    }
+  ]
+}

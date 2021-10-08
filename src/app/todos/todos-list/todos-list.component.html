@@ -1,0 +1,23 @@
+<div class="card-body">
+  <h4 class="text-center card-title mb-3">You have {{pendingItems?.length}} pending item(s)</h4>
+  <div class="card-text">
+
+
+
+    <div class="list-group">
+      <ng-container *ngFor="let item of list">
+        <div class="list-group-item">
+
+          <ng-container *ngIf="todoItem">
+            <ng-container *ngTemplateOutlet="todoItem.templateRef; context: {item: item }"></ng-container>
+          </ng-container>
+          <ng-container *ngIf="!todoItem">
+            <i class="bi" [ngClass]="{'bi-circle': item.completed, 'bi-check2-circle': !item.completed}"></i>
+            {{item.title}}
+          </ng-container>
+        </div>
+      </ng-container>
+    </div>
+
+  </div>
+</div>

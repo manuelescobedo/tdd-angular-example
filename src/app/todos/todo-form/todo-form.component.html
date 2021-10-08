@@ -1,0 +1,13 @@
+<form [formGroup]="formGroup">
+  <div class="input-group mb-3">
+    <input type="text" class="form-control" [class.is-invalid]="formGroup.controls.title?.dirty && formGroup.controls.title?.invalid"
+      formControlName="title" placeholder="Todos title" aria-label="Todos title" aria-describedby="add-todo">
+    <button class="btn btn-primary" type="submit" [class.btn-danger]="formGroup.controls.title?.dirty && formGroup.controls.title?.invalid"
+      [disabled]="formGroup.invalid || formGroup.disabled" (click)="savedItem()" id="add-todo"><i
+        class="bi bi-plus-circle"></i></button>
+    <div id="todo-item-feedback" class="invalid-feedback">
+      <span *ngIf="formGroup.controls.title?.errors?.required">Title is required</span>
+      <span *ngIf="formGroup.controls.title?.errors?.minlength">Title should have {{ formGroup.controls.title?.errors?.minlength?.requiredLength }} characters at least</span>
+    </div>
+  </div>
+</form>
